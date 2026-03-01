@@ -117,3 +117,31 @@ main a[href^="mailto:"] {
         grid-template-columns: 1fr; /* 1 column for everything on mobile [cite: 2285, 2328, 2372] */
     }
 }
+    /* Homepage Grid Layout */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr; /* Main content is wider than sidebar */
+    gap: 10px;
+}
+
+/* Assigning the areas */
+header { grid-area: header; }
+main { grid-area: main; }
+aside { grid-area: aside; background: #eeeeee; padding: 15px; }
+footer { grid-area: footer; }
+
+/* Responsive: Stack them on top of each other for mobile */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
