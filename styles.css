@@ -67,3 +67,53 @@ main a[href^="mailto:"] {
     color: #ff5722;
     font-weight: bold;
 }
+.projects-grid {
+    display: grid; /* Enables Grid layout [cite: 2275] */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns [cite: 2276] */
+    gap: 20px; /* Adds spacing between cards [cite: 2277] */
+    margin-top: 20px; [cite: 2278]
+}
+
+.project-card {
+    background: #f9f9f9; [cite: 2362]
+    padding: 15px; [cite: 2363]
+    border-radius: 10px; [cite: 2364]
+    border: 1px solid #ddd; [cite: 2365]
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); [cite: 2366]
+}
+    .gallery-grid {
+    display: grid; [cite: 2307]
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; [cite: 2309]
+}
+
+.gallery-grid img {
+    width: 100%; [cite: 2313]
+    height: 180px; [cite: 2314]
+    object-fit: cover; /* Ensures images don't look stretched [cite: 2315] */
+    border-radius: 10px; [cite: 2316]
+}
+    .blog-grid {
+    display: grid; [cite: 2356]
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; [cite: 2358]
+}
+
+.blog-post {
+    background: #f9f9f9; [cite: 2362]
+    padding: 15px; [cite: 2363]
+    border-radius: 10px; [cite: 2364]
+    border: 1px solid #ddd; [cite: 2365]
+}
+    .project-card, .blog-post {
+    transition: transform 0.3s; /* Smooth movement [cite: 2460] */
+}
+
+.project-card:hover, .blog-post:hover {
+    transform: scale(1.03); /* Slightly enlarges the card on hover [cite: 2463] */
+}
+    @media (max-width: 768px) {
+    .projects-grid, .blog-grid, .gallery-grid {
+        grid-template-columns: 1fr; /* 1 column for everything on mobile [cite: 2285, 2328, 2372] */
+    }
+}
