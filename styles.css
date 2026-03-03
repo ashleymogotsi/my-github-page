@@ -24,13 +24,18 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    color: #888;
     text-decoration: none;
-    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin: 0 20px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #d4a373; /* Changes to rose gold on hover */
+    text-decoration: none;
 }
 main {
     padding: 20px;
