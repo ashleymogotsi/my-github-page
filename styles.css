@@ -1,20 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: 'Playfair Display', 'Times New Roman', serif; /* Elegant serif font */
+    color: #555; /* Soft grey instead of harsh black */
+    background-color: #fffafb; /* Very soft blush pink background */
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;
 }
+
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
+    grid-area: header;
+    background-color: #fff;
+    padding: 80px 0 40px 0;
     text-align: center;
+    border-bottom: 1px solid #f9ecee; /* Light rose gold line */
 }
 
 header h1 {
-    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic; /* For that "Pretty Things" logo feel */
+    font-weight: 400;
+    color: #d4a373; /* Rose gold/Tan color */
+    letter-spacing: 2px;
+    font-size: 2.5rem;
 }
 
 nav a {
