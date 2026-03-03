@@ -1,53 +1,53 @@
 body {
-    font-family: 'Playfair Display', 'Times New Roman', serif; /* Elegant serif font */
-    color: #555; /* Soft grey instead of harsh black */
-    background-color: #fffafb; /* Very soft blush pink background */
+    font-family: 'Playfair Display', serif; 
+    background-color: #fffafb; /* Soft blush pink */
+    color: #555;
     margin: 0;
-    line-height: 1.8;
 }
 
 header {
     grid-area: header;
-    background-color: #fff;
-    padding: 80px 0 40px 0;
+    background-color: #ffffff; 
+    padding: 60px 0;
     text-align: center;
-    border-bottom: 1px solid #f9ecee; /* Light rose gold line */
+    border-bottom: 1px solid #f9ecee; 
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
-    font-style: italic; /* For that "Pretty Things" logo feel */
-    font-weight: 400;
-    color: #d4a373; /* Rose gold/Tan color */
-    letter-spacing: 2px;
-    font-size: 2.5rem;
+    color: #d4a373; /* Rose gold color */
+    font-style: italic;
+    letter-spacing: 3px;
+    text-transform: none; /* Keeps it soft and cursive-like */
 }
 
 nav a {
     color: #888;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 2px;
-    margin: 0 20px;
-    transition: color 0.3s;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #d4a373; /* Changes to rose gold on hover */
-    text-decoration: none;
-}
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    color: #d4a373;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
+main {
+    grid-area: main;
+    background: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border: 1px solid #f9ecee;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #fff;
+    border-left: 1px solid #f9ecee;
+    padding: 20px;
 }
 footer {
     background-color: #333;
